@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Internet</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+header{
+    background:#002b5b;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    background:linear-gradient(135deg,#003bff,#00aaff);
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#ffcc00;
+    color:black;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.planes{
+    padding:80px 10%;
+}
+
+.planes h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0px 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#0044ff;
+    font-size:35px;
+}
+
+.card span{
+    display:block;
+    font-size:30px;
+    color:#ff7a00;
+    font-weight:bold;
+}
+
+.contacto{
+    background:#002b5b;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+GLOBAL
+</div>
+
+<nav>
+<ul>
+<li><a href="#">Inicio</a></li>
+<li><a href="#">Planes</a></li>
+<li><a href="#">Cobertura</a></li>
+<li><a href="#">Contacto</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>El Internet de Todos</h1>
+
+<p>
+Internet rápido, estable y sin interrupciones para tu hogar y negocio.
+</p>
+
+<a href="#" class="btn">Ver Planes</a>
+
+</section>
+
+<section class="planes">
+
+<h2>Nuestros Planes</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>100 Mbps</h3>
+<span>S/50</span>
+<p>Ideal para el hogar</p>
+</div>
+
+<div class="card">
+<h3>120 Mbps</h3>
+<span>S/60</span>
+<p>Streaming HD</p>
+</div>
+
+<div class="card">
+<h3>150 Mbps</h3>
+<span>S/70</span>
+<p>Familias conectadas</p>
+</div>
+
+<div class="card">
+<h3>200 Mbps</h3>
+<span>S/80</span>
+<p>Gaming y trabajo</p>
+</div>
+
+<div class="card">
+<h3>500 Mbps</h3>
+<span>S/100</span>
+<p>Máximo rendimiento</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contacto">
+
+<h2>Contáctanos</h2>
+
+<p>📞 Atención al cliente: 982 970 834</p>
+
+<p>🛠 Soporte técnico: 985 533 462</p>
+
+</section>
+
+<footer>
+© 2026 Global Internet
+</footer>
+
+</body>
+</html>
