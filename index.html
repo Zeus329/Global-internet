@@ -23,7 +23,7 @@ body{
 header{
     background:#002b5b;
     color:white;
-    padding:20px 8%;
+    padding:12px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -32,6 +32,12 @@ header{
 .logo{
     font-size:30px;
     font-weight:700;
+}
+
+.logo img{
+    height:85px;
+    width:auto;
+    display:block;
 }
 
 nav ul{
@@ -46,20 +52,31 @@ nav a{
 }
 
 .hero{
-    background:linear-gradient(135deg,#003bff,#00aaff);
+    background:linear-gradient(
+        rgba(0,43,91,.75),
+        rgba(0,43,91,.75)
+    ),
+    url('img/fibra.avif');
+
+    background-size:cover;
+    background-position:center;
+
     color:white;
     text-align:center;
-    padding:100px 20px;
+    padding:150px 20px;
 }
 
 .hero h1{
     font-size:60px;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 .hero p{
-    font-size:20px;
+    font-size:22px;
     margin-bottom:30px;
+    margin:0 auto 30px auto;
+    max-width:700px;
+    line-height:1.6;
 }
 
 .btn{
@@ -71,8 +88,40 @@ nav a{
     font-weight:bold;
 }
 
+.btn2{
+    background:white;
+    color:#002b5b;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.btn2:hover{
+    background:#e5e5e5;
+}
+
+.plan-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#ffcc00;
+    color:black;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.plan-btn:hover{
+    background:#ffb700;
+    transform:scale(1.05);
+}
+
 .planes{
-    padding:80px 10%;
+    padding:50px 10%;
 }
 
 .planes h2{
@@ -101,7 +150,7 @@ nav a{
 
 .card h3{
     color:#0044ff;
-    font-size:35px;
+    font-size:33px;
 }
 
 .card span{
@@ -119,7 +168,7 @@ nav a{
 }
 
 .beneficios{
-    padding:80px 10%;
+    padding:55px 10%;
     text-align:center;
 }
 
@@ -144,7 +193,7 @@ nav a{
 }
 
 .cobertura{
-    padding:80px 10%;
+    padding:55px 10%;
     text-align:center;
 }
 
@@ -212,7 +261,7 @@ footer{
 <header>
 
 <div class="logo">
-GLOBAL
+    <img src="img/logo.png" alt="Global Internet">
 </div>
 
 <nav>
@@ -228,14 +277,23 @@ GLOBAL
 
 <section class="hero">
 
-<h1>El Internet de Todos</h1>
+<h1>Internet Rápido y Estable para tu Hogar</h1>
 
 <p>
-Internet rápido, estable y sin interrupciones para tu hogar y negocio.
+Disfruta de una conexión rápida y estable para tu hogar o negocio, respaldada por una moderna red de fibra óptica y enlaces inalámbricos de alto rendimiento.
 </p>
 
-<a href="#" class="btn">Ver Planes</a>
+<div class="botones">
 
+    <a href="#planes" class="btn">
+        Conocer Planes
+    </a>
+
+    <a href="https://wa.me/51982970834" class="btn2">
+        Solicitar Instalación
+    </a>
+
+</div>
 </section>
 
 <section class="planes">
@@ -248,30 +306,51 @@ Internet rápido, estable y sin interrupciones para tu hogar y negocio.
 <h3>100 Mbps</h3>
 <span>S/50</span>
 <p>Ideal para el hogar</p>
+<a href="https://wa.me/51982970834?text=Hola,%20me%20interesa%20el%20plan%20de%20100%20Mbps"
+       class="plan-btn">
+       Solicitar
+    </a>
 </div>
 
 <div class="card">
 <h3>120 Mbps</h3>
 <span>S/60</span>
 <p>Streaming HD</p>
+<a href="https://wa.me/51982970834?text=Hola,%20me%20interesa%20el%20plan%20de%20100%20Mbps"
+       class="plan-btn">
+       Solicitar
+    </a>
 </div>
 
 <div class="card">
 <h3>150 Mbps</h3>
 <span>S/70</span>
 <p>Familias conectadas</p>
+<a href="https://wa.me/51982970834?text=Hola,%20me%20interesa%20el%20plan%20de%20100%20Mbps"
+       class="plan-btn">
+       Solicitar
+    </a>
 </div>
 
 <div class="card">
 <h3>200 Mbps</h3>
 <span>S/80</span>
 <p>Gaming y trabajo</p>
+<a href="https://wa.me/51982970834?text=Hola,%20me%20interesa%20el%20plan%20de%20100%20Mbps"
+       class="plan-btn">
+       Solicitar
+    </a>
 </div>
 
 <div class="card">
 <h3>500 Mbps</h3>
 <span>S/100</span>
 <p>Máximo rendimiento</p>
+<a href="https://wa.me/51982970834?text=Hola,%20me%20interesa%20el%20plan%20de%20100%20Mbps"
+       class="plan-btn">
+       Solicitar
+    </a>
+</div>
 </div>
 
 </div>
