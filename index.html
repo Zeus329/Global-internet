@@ -118,6 +118,83 @@ nav a{
     padding:60px 20px;
 }
 
+.beneficios{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.beneficios h2{
+    margin-bottom:40px;
+}
+
+.beneficios-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.beneficio{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    font-size:18px;
+    font-weight:600;
+    color:#002b5b;
+}
+
+.cobertura{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.zonas{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    cursor:pointer;
+}
+
+.zona{
+    background:#00aaff;
+    color:white;
+    padding:20px 40px;
+    border-radius:15px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.zona:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    width:65px;
+    height:65px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.whatsapp img{
+    width:55px;
+    height:55px;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
 footer{
     text-align:center;
     padding:20px;
@@ -198,6 +275,54 @@ Internet rápido, estable y sin interrupciones para tu hogar y negocio.
 
 <section class="contacto">
 
+<section class="beneficios">
+
+    <h2>¿Por qué elegir Global?</h2>
+
+    <div class="beneficios-grid">
+
+        <div class="beneficio">
+            ⚡ Internet de alta velocidad
+        </div>
+
+        <div class="beneficio">
+            🛠 Soporte técnico rápido
+        </div>
+
+        <div class="beneficio">
+            📶 Conexión estable
+        </div>
+
+        <div class="beneficio">
+            🏠 Instalación para hogares y negocios
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cobertura">
+
+<h2>Cobertura</h2>
+
+<div class="zonas">
+
+<div class="zona">
+📍 Callería
+</div>
+
+<div class="zona">
+📍 Manantay
+</div>
+
+<div class="zona">
+📍 Yarinacocha
+</div>
+
+</div>
+
+</section>
+
 <h2>Contáctanos</h2>
 
 <p>📞 Atención al cliente: 982 970 834</p>
@@ -209,6 +334,10 @@ Internet rápido, estable y sin interrupciones para tu hogar y negocio.
 <footer>
 © 2026 Global Internet
 </footer>
+
+<a href="https://wa.me/51982970834" class="whatsapp" target="_blank">
+    <img src="Img/Whatsapp.png" alt="WhatsApp">
+</a>
 
 </body>
 </html>
